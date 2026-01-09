@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Your Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<button id="music-toggle" onclick="toggleMusic()">Play/Pause Music</button>
+
+<audio id="bg-music" loop>
+    <source src="audio/Careless Whisper - Acoustic Guitar.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    const audio = document.getElementById('bg-music');
+    const toggleBtn = document.getElementById('music-toggle');
+    
+    function toggleMusic() {
+        if (audio.paused) {
+            audio.play();
+            toggleBtn.textContent = 'Pause Music';
+        } else {
+            audio.pause();
+            toggleBtn.textContent = 'Play Music';
+        }
+    }
+</script>
+   
+    <header>
+        <h1>GALLERY</h1>
+        <p>Welcome to Aifa's Personal Space</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="friend.html">Friend</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li> 
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section id="gallery-intro">
+            <h2>Gallery</h2>
+            <p>This gallery is a collection of the most meaningful moments in my life. Each photo tells a story of my journey as a student, a friend, and a daughter who continuously strives to achieve her dreams. From university activities and volunteer programs to relaxing moments with family and friends — every picture holds a special place in my heart, reminding me of the joy, pride, and gratitude I feel for every step I’ve taken.
+                <video controls width="600" height="400">
+                    <source src="video/video 2.MOV" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </p>
+        </section>
+
+        <section id="family-collection" class="gallery-section">
+            <h3> My Family</h3>
+            <div class="gallery-grid">
+                <img src="image/familyy.jpeg" alt="Family Moment 1">
+                <img src="image/family.jpeg" alt="Family Moment 2">
+                <img src="image/family2.jpeg" alt="Family Moment 3">
+            </div>
+        </section>
+
+        <section id="friends-collection" class="gallery-section">
+            <h3>My Friends</h3>
+            <div class="gallery-grid">
+                <img src="image/high school friend.JPG" alt="Friends Moment 1">
+                <img src="image/friend 1.jpeg" alt="Friends Moment 2">
+                <img src="image/friends.jpeg" alt="Friends Moment 3">
+            </div>
+        </section>
+
+        <section id="events-collection" class="gallery-section">
+            <h3>Events</h3>
+            <div class="gallery-grid">
+                <img src="image/event 1.jpg" alt="Event Moment 1">
+                <img src="image/event 4.jpg" alt="Event Moment 2">
+                <img src="image/event 3.jpeg" alt="Event Moment 3">
+            </div>
+        </section>
+
+        <section id="pet-collection" class="gallery-section">
+            <h3>Pet</h3>
+            <div class="gallery-grid">
+                <img src="image/cat 1.jpeg" alt="Pet Moment 1">
+                <img src="image/WhatsApp Image 2026-01-04 at 2.17.49 PM.jpeg" alt="Pet Moment 2">
+                <img src="image/cat 2.jpeg" alt="Pet Moment 3">
+            </div>
+        </section>
+
+        <section id="hobby-collection" class="gallery-section">
+            <h3>Hobbies/Interest - Baking </h3>
+            <div class="gallery-grid">
+                <img src="image/hobby 1.jpg" alt="Baking 1">
+                <img src="image/hobby 2.jpg" alt="Baking  2">
+                <img src="image/hobby 3.jpg" alt="Baking 3">
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2026 Aifahdatul Nuhaa. All rights reserved.</p>
+    </footer>
+</body>
+</html>

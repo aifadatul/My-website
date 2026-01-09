@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Your Personal Website</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<button id="music-toggle" onclick="toggleMusic()">Play/Pause Music</button>
+
+<audio id="bg-music" loop>
+    <source src="audio/background music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    const audio = document.getElementById('bg-music');
+    const toggleBtn = document.getElementById('music-toggle');
+    
+    function toggleMusic() {
+        if (audio.paused) {
+            audio.play();
+            toggleBtn.textContent = 'Pause Music';
+        } else {
+            audio.pause();
+            toggleBtn.textContent = 'Play Music';
+        }
+    }
+</script>
+   
+    <header>
+        <h1>MY EDUCATION</h1>
+        <p>Welcome Aifa's Personal Space</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li> 
+                <li><a href="friend.html">Friend</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="education-intro">
+            <h2>My Journey Education</h2>
+            <p>Explore my academic path, achievements, and experiences that have shaped my growth.</p>
+        </section>
+
+        <section id="achievements-grid">
+            <h2>Achievements and Experiences</h2>
+            <div class="achievements-container">
+               
+                <div class="achievement-item">
+                    <h3>SPM Results</h3>
+                    <img src="image/academicspm.JPG" alt="SPM Certificate" class="achievement-image">
+                    <p>I achieved 6 A’s and 2 B’s in the Sijil Pelajaran Malaysia (SPM), a milestone that strengthened my confidence and fueled my passion for learning. This achievement remains one of my proudest accomplishments, highlighting my dedication, discipline, and perseverance. It continues to inspire me to embrace new challenges and strive for excellence in higher education and beyond.</p>
+                    <p> “Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.” – Christian D. Larson</p>
+                </div>
+
+                <div class="achievement-item">
+                    <h3>UiTM Achievements</h3>
+                    <img src="image/sem 4 dekan.jpeg" alt="UiTM Dean's List Award" class="achievement-image">
+                    <p>I have consistently earned the Dean’s List Award from Semester 1 through Semester 4 while pursuing my Diploma in Information Management at Universiti Teknologi MARA (UiTM). This consistent recognition of my academic achievements has fueled my motivation to maintain high standards, embrace challenges, and strive for excellence in all my endeavors.</p>
+                    <p>“Strive not to be a success, but rather to be of value.” – Albert Einstein</p>
+                </div>
+
+                
+                <div class="achievement-item">
+                    <h3>Future Goals</h3>
+                    <img src="image/future goals.jpeg" alt="Future Goals Illustration" class="achievement-image">
+                    <p> “I aspire to continuously develop my experience, skills, and leadership, enabling me to achieve personal and professional success in the future.”</p>
+                </div>
+
+                <div class="achievement-item">
+                    <h3>Work Experiences</h3>
+                    <img src="image/intern.jpeg" alt="Work Experience at Restaurant and Syariah Court" class="achievement-image">
+                    <p>My experience as an intern at the Syariah Court of Putrajaya was both fascinating and unforgettable. It was an invaluable experience that gave me the opportunity to learn about court administration, understand official procedures, and enhance my professional and communication skills.</p>
+                    <p> “Professional growth comes from stepping out of your comfort zone and embracing new challenges.” – Anonymous</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Aifahdatul Nuhaa. All rights reserved.</p>
+    </footer>
+</body>
+</html>

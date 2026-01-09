@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - AIFA'S WEBSITE</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+   
+<button id="music-toggle" onclick="toggleMusic()">Play/Pause Music</button>
+
+<audio id="bg-music" loop>
+    <source src="audio/background music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    const audio = document.getElementById('bg-music');
+    const toggleBtn = document.getElementById('music-toggle');
+    
+    function toggleMusic() {
+        if (audio.paused) {
+            audio.play();
+            toggleBtn.textContent = 'Pause Music';
+        } else {
+            audio.pause();
+            toggleBtn.textContent = 'Play Music';
+        }
+    }
+</script>
+
+    <header>
+        <h1>WELCOME TO AIFA'S PERSONAL SPACE</h1>
+        <p>Aifa Personal Space</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="friend.html">Friend</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Introduction</h2>
+                <p>Welcome to my personal website! Here, you’ll get to know me a little bit, my life journey, interests, and achievements that have shaped me into who I am today. This website is not just a place to introduce myself, but also a space where I share the stories, experiences, and inspirations I’ve gained throughout my life and studies.</p>
+                <p>I believe that everyone has their own unique and meaningful life story, and I wish to make this website a reflection of who I am both personally and professionally. Through each section of this site, you’ll see how I’ve grown as an individual from a passionate student to someone who dares to dream big and works hard to achieve her goals.</p>
+                <p>Thank you for taking the time to visit my page. I truly appreciate your presence here and hope that my stories and experiences will inspire and motivate you. Enjoy your journey exploring this website because this is where my story begins.</p>
+            </div>
+            <img src="image/WhatsApp Image 2026-01-04 at 2.34.05 PM.jpeg" alt="Hero Image of Aifa" class="hero-img">
+        </section>
+
+        <section id="highlights">
+            <h2>Quick Highlights</h2>
+            <ul>
+                <li><strong>About Me:</strong> Discover my background and passions.</li>
+                <li><strong>Education:</strong> My academic journey and qualifications.</li>
+                <li><strong>Friend:</strong> Insights into my friendships and social life.</li>
+                <li><strong>Family:</strong> Stories about my family and roots.</li>
+                <li><strong>Gallery:</strong> Photos and memories from my life.</li>
+                <li><strong>Contact:</strong> How to reach out to me.</li>
+            </ul>
+            <p>Click on the navigation above to dive deeper!</p>
+           
+            <a href="contact.html" class="cta-button">Get in Touch</a>
+        </section>
+
+        <section id="contact">
+            <h2>Connect with Me</h2>
+            <p>Reach out directly via your favorite apps!</p>
+            <div class="contact-icons">
+                <a href="mailto:aifadatuln@gmail.com" title="Send Email" class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+0182983608" title="Call Me" class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="https://wa.me/0182983608" title="Message Aifa on WhatsApp" target="_blank" class="contact-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/aifadatul.__" title="Follow Aifa on Instagram" target="_blank" class="contact-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aifahdatul Nuhaa. All rights reserved.</p>
+    </footer>
+</body>
+</html>

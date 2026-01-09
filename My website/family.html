@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family - Your Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<button id="music-toggle" onclick="toggleMusic()">Play/Pause Music</button>
+
+<audio id="bg-music" loop>
+    <source src="audio/Careless Whisper - Acoustic Guitar.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    const audio = document.getElementById('bg-music');
+    const toggleBtn = document.getElementById('music-toggle');
+    
+    function toggleMusic() {
+        if (audio.paused) {
+            audio.play();
+            toggleBtn.textContent = 'Pause Music';
+        } else {
+            audio.pause();
+            toggleBtn.textContent = 'Play Music';
+        }
+    }
+</script>
+   
+    <header>
+        <h1>MY FAMILY</h1>
+        <p>Welcome to Aifa's Personal Space</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="friend.html">Friend</a></li>
+                <li><a href="family.html">Family</a></li> 
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <main>
+        <section id="family-intro">
+            <div class="intro-content">
+                <h2>My Family</h2>
+                <p>My family is my greatest source of strength and inspiration. They have always been my backbone, supporting every step and decision I make, especially in pursuing my dreams and academic goals. My friends also play a big role in brightening my days sharing life experiences, discovering new things together, and teaching me the true meaning of friendship and sincerity.</p>
+                <p>I come from a simple yet loving and supportive family. My father, Mr. Mohd Arif, is a strict but caring person. He has taught me the true meaning of responsibility, patience, and hard work in achieving success in life. My mother, Mrs. Ngakilah, is a gentle and kind-hearted woman who has always been my biggest source of encouragement, especially during challenging times in my studies and daily life.</p>
+                <p>I have six siblings, five sisters and one brother who always bring joy and laughter to our home. They are not only my companions but also my biggest supporters in everything I do. We share a very close bond, and although we sometimes have different opinions, the love between us never fades.</p>
+                <p>For me, family is the most precious gift in life. They are always by my side, giving me strength, advice, and unconditional love. Every achievement I have today would not be possible without their prayers and endless support.</p>
+            </div>
+            <img src="image/5b9dc4f1-9780-4f27-86e0-d1e6ddc66080.jpg" alt="Picture of Family" class="family-img">
+        </section>
+
+      
+        <section id="family-gallery" class="gallery-section">
+            <h2>Family Gallery</h2>
+            <p>Here are some cherished moments from my family life, captured in photos and videos. Each one holds a special memory—hover or click for brief explanations!</p>
+            
+            <div class="gallery-grid">
+    <div class="gallery-item full-frame">
+        <video controls width="100%" height="auto" style="width: 100%; max-width: 100vw;">
+            <source src="video/WhatsApp Video 2026-01-09 at 6.07.43 PM.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="caption">While waiting for relatives to exchange greetings during the Hari Raya celebration, we spent time recording a TikTok video together. This simple activity added joy to the festive atmosphere, strengthened family bonds, and created sweet memories that will always be cherished.</p>
+    </div>
+    
+    <div class="gallery-item full-frame">
+        <img src="image/gambar 2.jpeg" alt="Family Moment 2" style="width: 100%; max-width: 100vw; height: auto;">
+        <p class="caption">This is a family photo taken during my sister’s engagement ceremony. This special moment captures the togetherness of our entire family as we celebrate a meaningful and memorable occasion.</p>
+    </div>
+    
+    <div class="gallery-item">
+        <video controls width="100%" height="auto">
+            <source src="video/WhatsApp Video 2026-01-09 at 6.07.04 PM.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p class="caption">This video features the six of us siblings during the Hari Raya celebration. It was recorded as a meaningful keepsake that reflects the joy of the festive season and the close bond we share as siblings. This moment captures our happiness in being together as a family and serves as a symbol of love, unity, and togetherness that will always be remembered.</p>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2026 Aifahdatul Nuhaa. All rights reserved.</p>
+    </footer>
+</body>
+</html>

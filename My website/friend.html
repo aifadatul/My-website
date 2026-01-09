@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend - Your Personal Website</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<button id="music-toggle" onclick="toggleMusic()">Play/Pause Music</button>
+
+<audio id="bg-music" loop>
+    <source src="audio/Careless Whisper - Acoustic Guitar.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    const audio = document.getElementById('bg-music');
+    const toggleBtn = document.getElementById('music-toggle');
+    
+    function toggleMusic() {
+        if (audio.paused) {
+            audio.play();
+            toggleBtn.textContent = 'Pause Music';
+        } else {
+            audio.pause();
+            toggleBtn.textContent = 'Play Music';
+        }
+    }
+</script>
+   
+    <header>
+        <h1>MY FRIENDS</h1>
+        <p>Welcome to Aifa's Personal Space</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="friend.html">Friend</a></li> 
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="friend-intro">
+            <h2>A Piece of My Story</h2>
+            <p>Discover the friends and companions who have shaped my life and brought joy to my journey.</p>
+        </section>
+
+        <section id="university-friends" class="friend-section">
+            <div class="section-content">
+                <h3>UiTM Friends</h3>
+                <p> During my time at university, I was fortunate to meet several wonderful friends who have become very close to me. Our friendship began during orientation week and has remained strong until today. We spent a lot of time together completing assignments, sharing experiences as students, and supporting one another through both challenges and happy moments. Their presence made my university life more meaningful and filled with many unforgettable memories.</p>
+            
+            </div>
+            <img src="image/0ccdbd2b-1835-41d9-94ac-77f026738712 (1).jpg" alt="Photo of University Friends" class="friend-img">
+        </section>
+
+        <section id="school-friends" class="friend-section">
+            <div class="section-content">
+                <h3>High School Friends</h3>
+                <p>Before continuing my studies at university, I had six close friends whom I met during my high school years at SMK Cyberjaya. Our friendship began in 2020 and has remained strong until today, even though we are studying at the same university in different courses and at different locations. They have always been there for me through both difficult and happy times.</p>
+                <p>During semester breaks, we spend time together by going out for meals, watching movies, playing bowling, or simply chatting and laughing. Although we are all busy with our own responsibilities, our friendship remains strong. To me, they are not just friends, but like family.</p>
+            </div>
+            <img src="image/IMG_0019 (1).JPG" alt="Photo of School Friends" class="friend-img">
+        </section>
+
+        <section id="pet-cat" class="friend-section">
+            <div class="section-content">
+                <h3>My Cat</h3>
+                <p>Besides my friends, my pet cat is also one of my closest companions. His name is Ici. Every time I come home, seeing him run to the door to greet me instantly takes away all my tiredness after a long day of studying. Taking care of him has taught me a lot about patience, responsibility, and love. It may seem like a small thing, but having a pet has helped me become more caring and appreciative toward other living beings. For me, Ici is not just a pet he’s a true friend who is always there whenever I need comfort.</p>
+            </div>
+            <img src="image/WhatsApp Image 2026-01-04 at 2.17.49 PM.jpeg" alt="Photo of My Cat Ici" class="friend-img">
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2026 Aifahdatul Nuhaa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
